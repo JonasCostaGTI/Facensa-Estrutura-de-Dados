@@ -88,28 +88,24 @@ public class ContatoBeanImplementacao {
 
 		System.out.println("Ordenacao por nome");
 		System.out.println("");
-		Contato[] ordenarPorNome = contatoBean.ordenarPorNome("A");
-		for (Contato contatoNome : ordenarPorNome) {
-			System.out.println(contatoNome.getNome());
-		}
-
-		System.out.println("------------------------");
+		contatoBean.ordenarPorNome("D");
+		contatoBean.imprimir();
+		System.out.println("");
 
 		System.out.println("Ordenacao por email");
 		System.out.println("");
-		Contato[] ordenarPorEmail = contatoBean.ordenarPorEmail("A");
-		for (Contato contatoEmail : ordenarPorEmail) {
-			System.out.println(contatoEmail.getEmail());
-		}
-
-		System.out.println("------------------------");
-
-		System.out.println("Ordenacao por telefone");
+		contatoBean.ordenarPorEmail("A");
+		contatoBean.imprimir();
 		System.out.println("");
-		Contato[] ordenarPorTelefone = contatoBean.ordenarPorTelefone("A");
-		for (Contato contatoTelefone : ordenarPorTelefone) {
-			System.out.println(contatoTelefone.getTelefone());
-		}
+
+		System.out.println("Ordenacao por Telefone");
+		System.out.println("");
+		contatoBean.ordenarPorTelefone("D");
+		contatoBean.imprimir();
+		System.out.println("");
+
+
+		//
 
 	}
 

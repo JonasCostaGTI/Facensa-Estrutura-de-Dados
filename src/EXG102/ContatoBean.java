@@ -30,7 +30,6 @@ public class ContatoBean {
 	public void imprimir() {
 		for (int i = 0; i < contatos.length; i++) {
 			if (contatos[i] != null) {
-				System.out.println("contato: " + i);
 				System.out.println("Nome: " + contatos[i].getNome());
 				System.out.println("Email: " + contatos[i].getEmail());
 				System.out.println("Telefone: " + contatos[i].getTelefone());
