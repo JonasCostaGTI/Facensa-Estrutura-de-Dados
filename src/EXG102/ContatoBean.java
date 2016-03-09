@@ -76,10 +76,170 @@ public class ContatoBean {
 
 		if (conta != 0) {
 			System.out.println("O contato " + nome + ", foi excluido com sucesso!");
-		}else {
+		} else {
 			System.out.println("Contado " + nome + " nao encontrado para ser excluido");
 		}
-
 	}
+
+	public Contato[] ordenarPorNome(String ordemOrdenacao) {
+		switch (ordemOrdenacao) {
+		case "A":
+			System.out.println("Ascendente");
+			//ascendente
+			for (int i = contatos.length - 1; i > 1; i--) {
+				for (int j = 0; j < i; j++) {
+
+					if (contatos[j].getNome().toString().compareTo(contatos[j + 1].getNome().toString()) > 0) {
+
+						Contato c = new Contato();
+						c.setNome(contatos[j].getNome());
+						contatos[j].setNome(contatos[j+1].getNome());
+						contatos[j+1].setNome(c.getNome());
+						c = null;
+						
+					}
+				}
+			}
+
+			return contatos;
+			
+		case "D":
+			System.out.println("Descendente");
+			//descendente
+			for (int i = contatos.length - 1; i > 0; i--) {
+				for (int j = 0; j < i; j++) {
+
+					if (contatos[j].getNome().toString().compareTo(contatos[j + 1].getNome().toString()) < 0) {
+
+						Contato c = new Contato();
+						c.setNome(contatos[j].getNome());
+						contatos[j].setNome(contatos[j+1].getNome());
+						contatos[j+1].setNome(c.getNome());
+						c = null;
+						
+					}
+				}
+			}
+			
+			return contatos;
+
+		default:
+			
+			System.out.println("valor invalido");
+			break;
+		}
+		return contatos;
+	}
+	
+	
+	
+	
+	public Contato[] ordenarPorEmail(String ordemOrdenacao) {
+		switch (ordemOrdenacao) {
+		case "A":
+			System.out.println("Ascendente");
+			//ascendente
+			for (int i = contatos.length - 1; i > 1; i--) {
+				for (int j = 0; j < i; j++) {
+
+					if (contatos[j].getEmail().toString().compareTo(contatos[j + 1].getEmail().toString()) > 0) {
+
+						Contato c = new Contato();
+						c.setEmail(contatos[j].getEmail());
+						contatos[j].setEmail(contatos[j+1].getEmail());
+						contatos[j+1].setEmail(c.getEmail());
+						c = null;
+						
+					}
+				}
+			}
+
+			return contatos;
+			
+		case "D":
+			System.out.println("Descendente");
+			//descendente
+			for (int i = contatos.length - 1; i > 0; i--) {
+				for (int j = 0; j < i; j++) {
+
+					if (contatos[j].getEmail().toString().compareTo(contatos[j + 1].getEmail().toString()) < 0) {
+
+						Contato c = new Contato();
+						c.setEmail(contatos[j].getEmail());
+						contatos[j].setEmail(contatos[j+1].getEmail());
+						contatos[j+1].setEmail(c.getEmail());
+						c = null;
+						
+					}
+				}
+			}
+			
+			return contatos;
+
+		default:
+			
+			System.out.println("valor invalido");
+			break;
+		}
+		return contatos;
+	}
+	
+	
+	
+	
+	
+	public Contato[] ordenarPorTelefone(String ordemOrdenacao) {
+		switch (ordemOrdenacao) {
+		case "A":
+			System.out.println("Ascendente");
+			//ascendente
+			for (int i = contatos.length - 1; i > 1; i--) {
+				for (int j = 0; j < i; j++) {
+
+					if (contatos[j].getTelefone().toString().compareTo(contatos[j + 1].getTelefone().toString()) > 0) {
+
+						Contato c = new Contato();
+						c.setTelefone(contatos[j].getTelefone());
+						contatos[j].setTelefone(contatos[j+1].getTelefone());
+						contatos[j+1].setTelefone(c.getTelefone());
+						c = null;
+						
+					}
+				}
+			}
+
+			return contatos;
+			
+		case "D":
+			System.out.println("Descendente");
+			//descendente
+			for (int i = contatos.length - 1; i > 0; i--) {
+				for (int j = 0; j < i; j++) {
+
+					if (contatos[j].getTelefone().toString().compareTo(contatos[j + 1].getTelefone().toString()) < 0) {
+
+						Contato c = new Contato();
+						c.setTelefone(contatos[j].getTelefone());
+						contatos[j].setTelefone(contatos[j+1].getTelefone());
+						contatos[j+1].setTelefone(c.getTelefone());
+						c = null;
+						
+					}
+				}
+			}
+			
+			return contatos;
+
+		default:
+			
+			System.out.println("valor invalido");
+			break;
+		}
+		return contatos;
+	}
+	
+	
+	
+	
 
 }
