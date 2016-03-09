@@ -90,10 +90,10 @@ public class ContatoBean {
 
 					if (contatos[j].getNome().toString().compareTo(contatos[j + 1].getNome().toString()) > 0) {
 
-						Contato c = new Contato();
-						c.setNome(contatos[j].getNome());
-						contatos[j].setNome(contatos[j+1].getNome());
-						contatos[j+1].setNome(c.getNome());
+						Contato c;
+						c = (contatos[j]);
+						contatos[j] = contatos[j+1];
+						contatos[j+1] = c;
 						c = null;
 						
 					}
@@ -110,10 +110,10 @@ public class ContatoBean {
 
 					if (contatos[j].getNome().toString().compareTo(contatos[j + 1].getNome().toString()) < 0) {
 
-						Contato c = new Contato();
-						c.setNome(contatos[j].getNome());
-						contatos[j].setNome(contatos[j+1].getNome());
-						contatos[j+1].setNome(c.getNome());
+						Contato c;
+						c = (contatos[j]);
+						contatos[j] = contatos[j+1];
+						contatos[j+1] = c;
 						c = null;
 						
 					}
@@ -143,10 +143,10 @@ public class ContatoBean {
 
 					if (contatos[j].getEmail().toString().compareTo(contatos[j + 1].getEmail().toString()) > 0) {
 
-						Contato c = new Contato();
-						c.setEmail(contatos[j].getEmail());
-						contatos[j].setEmail(contatos[j+1].getEmail());
-						contatos[j+1].setEmail(c.getEmail());
+						Contato c;
+						c = (contatos[j]);
+						contatos[j] = contatos[j+1];
+						contatos[j+1] = c;
 						c = null;
 						
 					}
@@ -163,10 +163,10 @@ public class ContatoBean {
 
 					if (contatos[j].getEmail().toString().compareTo(contatos[j + 1].getEmail().toString()) < 0) {
 
-						Contato c = new Contato();
-						c.setEmail(contatos[j].getEmail());
-						contatos[j].setEmail(contatos[j+1].getEmail());
-						contatos[j+1].setEmail(c.getEmail());
+						Contato c;
+						c = (contatos[j]);
+						contatos[j] = contatos[j+1];
+						contatos[j+1] = c;
 						c = null;
 						
 					}
@@ -197,10 +197,10 @@ public class ContatoBean {
 
 					if (contatos[j].getTelefone().toString().compareTo(contatos[j + 1].getTelefone().toString()) > 0) {
 
-						Contato c = new Contato();
-						c.setTelefone(contatos[j].getTelefone());
-						contatos[j].setTelefone(contatos[j+1].getTelefone());
-						contatos[j+1].setTelefone(c.getTelefone());
+						Contato c;
+						c = (contatos[j]);
+						contatos[j] = contatos[j+1];
+						contatos[j+1] = c;
 						c = null;
 						
 					}
@@ -217,10 +217,10 @@ public class ContatoBean {
 
 					if (contatos[j].getTelefone().toString().compareTo(contatos[j + 1].getTelefone().toString()) < 0) {
 
-						Contato c = new Contato();
-						c.setTelefone(contatos[j].getTelefone());
-						contatos[j].setTelefone(contatos[j+1].getTelefone());
-						contatos[j+1].setTelefone(c.getTelefone());
+						Contato c;
+						c = (contatos[j]);
+						contatos[j] = contatos[j+1];
+						contatos[j+1] = c;
 						c = null;
 						
 					}

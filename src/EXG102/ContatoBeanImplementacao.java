@@ -6,14 +6,15 @@ public class ContatoBeanImplementacao {
 		ContatoBean contatoBean = new ContatoBean();
 
 		Contato contato = new Contato();
-		contato.setNome("Jonas3");
-		contato.setEmail("jonas@mail.com");
-		contato.setTelefone("9999999");
+		contato.setNome("Jonas1");
+		contato.setEmail("jonas1@mail.com");
+		contato.setTelefone("99999991");
+		
 
 		Contato contato1 = new Contato();
-		contato1.setNome("Jonas1");
-		contato1.setEmail("jonas1@mail.com");
-		contato1.setTelefone("99999991");
+		contato1.setNome("Jonas");
+		contato1.setEmail("jonas@mail.com");
+		contato1.setTelefone("9999999");
 
 		Contato contato2 = new Contato();
 		contato2.setNome("Jonas2");
@@ -21,7 +22,7 @@ public class ContatoBeanImplementacao {
 		contato2.setTelefone("99999992");
 
 		Contato contato3 = new Contato();
-		contato3.setNome("Jonas5");
+		contato3.setNome("Jonas3");
 		contato3.setEmail("jonas3@mail.com");
 		contato3.setTelefone("99999993");
 
