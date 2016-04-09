@@ -1,5 +1,7 @@
 package aula05;
 
+import javax.sql.rowset.spi.TransactionalWriter;
+
 public class Fila {
 
 	private static final Integer PRIMEIRO = -1;

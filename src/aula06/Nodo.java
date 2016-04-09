@@ -1,6 +1,6 @@
 package aula06;
 
-public class Nodo {
+public class Nodo<T> {
 	public Object objeto;
 	public Nodo proximo;
 
